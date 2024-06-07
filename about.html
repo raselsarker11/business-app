@@ -17,37 +17,39 @@
 <body>
     
     <!-- navber section start -->
-    <nav class="bg-gray-800 p-4 pt-6 h-24">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-white text-xl font-bold">Roots-Tech</div>
-            <div class="hidden md:flex space-x-4">
-                <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                <a href="about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-                <a href="benefit.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features/Benefits</a>
-                <a href="pricing.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-                <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+    <nav class="navber p-4 pt-6 h-24 border shadow-4xl">
+        <div class="navber container">
+            <div class="navber container mx-auto flex justify-between items-center">
+                <div class="m-auto text-black text-xl font-bold hover:bg-gray-700 hover:text-black rounded-md">Roots-Tech</div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="about.html" id="benifit" class="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                    <a href="benefit.html" class="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features/Benefits</a>
+                    <a href="pricing.html" class="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+                    <a href="contact.html" class="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+                <div class="hidden md:flex bg-gray-50 hover:bg-gray-100 rounded-3xl space-x-4">
+                    <a class="block px-4 py-4 leading-loose text-xs text-center font-semibold leading-none text-black hover:text-white hover:bg-gray-500 rounded-3xl" href="login.html">Sign in</a>
+                    <a class="block px-4 py-2 leading-loose text-xs text-center text-black hover:text-white font-semibold bg-blue-200 hover:bg-blue-700 rounded-3xl" href="register.html">Sign Up</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="hidden md:flex bg-gray-50 hover:bg-gray-100 rounded-3xl space-x-4">
-                <a class="block px-4 py-4 leading-loose text-xs text-center font-semibold leading-none text-black hover:text-white hover:bg-gray-500 rounded-3xl" href="login.html">Sign in</a>
-                <a class="block px-4 py-2 leading-loose text-xs text-center text-black hover:text-white font-semibold bg-blue-400 hover:bg-blue-700 rounded-3xl" href="register.html">Sign Up</a>
-            </div>
-            <div class="md:hidden flex items-center">
-                <button id="menu-button" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="index.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Home</a>
-            <a href="about.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">About Us</a>
-            <a href="benefit.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Features/Benefits</a>
-            <a href="pricing.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Pricing</a>
-            <a href="contact.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Contact</a>
-            <div class="px-4 pt-6 pb-4 rounded-xl bg-gray-50">
-                <a class="block px-4 py-2 mb-2 leading-loose text-xs text-center font-semibold leading-none bg-gray-200 hover:bg-gray-300 rounded-xl" href="login.html">Sign in</a>
-                <a class="block px-4 py-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl" href="register.html">Sign Up</a>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="index.html" class="block text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="block text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="benefit.html" class="block text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Features/Benefits</a>
+                <a href="pricing.html" class="block text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+                <a href="contact.html" class="block text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <div class="px-4 pt-6 pb-4 rounded-xl bg-gray-50">
+                    <a class="block px-4 py-2 mb-2 leading-loose text-xs text-center font-semibold leading-none bg-gray-200 hover:bg-gray-300 rounded-xl" href="login.html">Sign in</a>
+                    <a class="block px-4 py-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl" href="register.html">Sign Up</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -57,7 +59,7 @@
     <!-- about section start -->
     <div class="container mx-auto py-12">
       <div class="text-center">
-          <h2 class="text-3xl font-bold tracking-tight sm:text-5xl">About Us</h2>
+          <h2 class="text-3xl font-bold tracking-tight sm:text-5xl text-green-500">About Us</h2>
           <p class="max-w-3xl mx-auto mt-4 text-xl">Learn more about our company, our values, and our mission.</p>
       </div>
       <div class="mt-12 flex flex-col lg:flex-row lg:items-center lg:space-x-12">
@@ -65,10 +67,10 @@
               <img src="/img/busniess.png" alt="Company Image" class="w-full h-full object-cover rounded-lg shadow-lg">
           </div>
           <div class="lg:w-1/2 mt-8 lg:mt-0">
-              <h3 class="text-2xl font-semibold mb-4">Our Story</h3>
+              <h3 class="text-2xl font-semibold mb-4 text-green-500">Our Story</h3>
               <p class="text-lg mb-4">Our company was founded with a simple mission: to provide the best solutions for our customers. We believe in innovation, dedication, and customer satisfaction.</p>
               <p class="text-lg mb-4">Over the years, we have grown from a small startup to a leading provider in our industry, thanks to our hard-working team and loyal customers. We are committed to continuing this journey with the same passion and excellence.</p>
-              <h3 class="text-2xl font-semibold mb-4">Our Values</h3>
+              <h3 class="text-2xl font-semibold mb-4 text-green-500">Our Values</h3>
               <ul class="list-disc list-inside space-y-2 text-lg">
                   <li>Customer Focus: We put our customers at the heart of everything we do.</li>
                   <li>Innovation: We strive to innovate and improve our services continually.</li>
@@ -80,8 +82,31 @@
     </div>
     <!-- about section end -->
 
-
-
+    <div class="container mx-auto py-12">
+        <div class="mt-12 flex flex-col lg:flex-row lg:items-center lg:space-x-12">
+            <div class="lg:w-1/2 mt-8 lg:mt-0">
+                <h3 class="text-2xl font-semibold mb-4 text-green-500">Our Story</h3>
+                <p class="text-lg mb-4">Our company was founded with a simple mission: to provide the best solutions for our customers. We believe in innovation, dedication, and customer satisfaction.</p>
+                <p class="text-lg mb-4">Over the years, we have grown from a small startup to a leading provider in our industry, thanks to our hard-working team and loyal customers. We are committed to continuing this journey with the same passion and excellence.</p>
+                <h3 class="text-2xl font-semibold mb-4 text-green-500">Our Values</h3>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li>Customer Focus: We put our customers at the heart of everything we do.</li>
+                    <li>Innovation: We strive to innovate and improve our services continually.</li>
+                    <li>Integrity: We conduct our business with honesty and integrity.</li>
+                    <li>Teamwork: We believe in the power of teamwork and collaboration.</li>
+                </ul>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="/img/data-visualization-featured.png" alt="Company Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+    <!-- about section end -->
+    
+    
+    
+    
+    
     <!-- footer section start -->
     <footer class="bg-gray-100 pt-8">
         <div class="bg-gray-900 text-gray-300 py-24">

@@ -1,3 +1,21 @@
 .banner{
    height: 70vh;
 }
+
+/* #benefit {
+   background: linear-gradient(45deg, #4239A2, #f94d6d, #f94d6d, #4239A2);
+   background: linear-gradient(45deg, #F9F9FF, #f94d6d, #f94d6d, #4239A2);
+ } */
+#benefit {
+   background-color: #e7e7f5;
+ }
+.navber{
+   background-color: white;
+}
+.banner{
+   background-color: #F9F9FF;
+}
+.Signup{
+   color: #191b3b;
+}
+
